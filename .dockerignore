@@ -1,0 +1,6 @@
+uploads/
+*.log
+vendor/
+node_modules/
+.git
+.gitignore
