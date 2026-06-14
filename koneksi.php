@@ -1,9 +1,9 @@
 <?php
 // Konfigurasi Database
-$host     = "localhost";
-$username = "root";
-$password = "";
-$database = "db_sweet_bakery";
+$host     = getenv('DB_HOST') ?: 'localhost';
+$username = getenv('DB_USER') ?: 'root';
+$password = getenv('DB_PASSWORD') ?: '';
+$database = getenv('DB_NAME') ?: 'db_sweet_bakery';
 
 // Membuat koneksi ke database
 $koneksi = new mysqli($host, $username, $password, $database);
